@@ -1,0 +1,11 @@
+<form>
+    <label for="id">Id tavolo</label>
+    <input type="number" name="id" id="id" placeholder="0" [(ngModel)]="idTavolo">
+    <label for="numeroPosti">Numero posti</label>
+    <input type="number" name="numeroPosti" id="numeroPosti" placeholder="0" [(ngModel)]="numeroPosti">
+    <label for="rotondo">E' rotondo?</label>
+    <input type="checkbox" name="rotondo" id="rotondo" [(ngModel)]="rotondo">
+    <label for="riservato">E' riservato?</label>
+    <input type="checkbox" name="riservato" id="riservato" [(ngModel)]="riservato">
+    <button (click)="aggiungiNuovoTavolo(); $event.preventDefault()">Aggiungi</button>
+  </form>

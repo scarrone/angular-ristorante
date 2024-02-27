@@ -1,0 +1,25 @@
+<li>
+    <p class="header">Id tavolo: {{numeroId}}</p>
+    <p>Numero posti: {{numeroPosti}}</p>
+    <p *ngIf="rotondo; then rotondoOk else noRotondo"></p>
+    <br>
+    <br>
+    <p *ngIf="riservato; then riservatoOk else noRiservato"></p>
+
+
+    <ng-template #rotondoOk>
+        Rotondo
+    </ng-template>
+
+    <ng-template #noRotondo>
+        Non è rotondo
+    </ng-template>
+
+    <ng-template #riservatoOk>
+        Riservato
+    </ng-template>
+
+    <ng-template #noRiservato>
+        Libero
+    </ng-template>
+</li>

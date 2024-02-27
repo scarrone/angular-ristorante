@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Tavolo } from './models/Tavolo';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ristorante';
+  tavoli : Tavolo[] = [
+
+    {
+      id : 1,
+      numeroPosti : 4,
+      rotondo : true,
+      riservato : false
+    },
+    {
+      id : 2,
+      numeroPosti : 8,
+      rotondo : false,
+      riservato : true
+    }
+  ];
+
+
 }
